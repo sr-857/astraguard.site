@@ -1,7 +1,6 @@
 import React from 'react';
 
 interface Props {
-    systemId: string;
     label: string;
     trend: 'stable' | 'increasing' | 'decreasing' | 'critical';
     timeToFailure?: number; // Seconds
