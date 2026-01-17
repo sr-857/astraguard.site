@@ -8,7 +8,7 @@ interface Props {
     confidence: number; // 0-1
 }
 
-export const PredictiveAnalysis: React.FC<Props> = ({ systemId, label, trend, timeToFailure, confidence }) => {
+export const PredictiveAnalysis: React.FC<Props> = ({ label, trend, timeToFailure, confidence }) => {
     // Only show if there's a negative trend or critical status
     if (trend === 'stable' || trend === 'increasing') return null;
 
