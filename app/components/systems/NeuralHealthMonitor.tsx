@@ -2,7 +2,7 @@
 
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Activity, Brain, Zap, Cpu, ShieldCheck, Gauge } from 'lucide-react';
+import { Activity, Brain, Zap, Cpu, ShieldCheck } from 'lucide-react';
 import { useDashboard } from '../../context/DashboardContext';
 
 export const NeuralHealthMonitor: React.FC = () => {
