@@ -1,10 +1,10 @@
 import { useRef, useMemo } from "react";
-import { useFrame, useLoader } from "@react-three/fiber";
+import { ThreeElements, useFrame, useLoader } from "@react-three/fiber";
 import { sunFragmentShaderCorona, sunFragmentShaderSurface, sunVertexShaderCorona, sunVertexShaderSurface } from "../../../shaders/sunShaders";
 import { SCENE_MANAGER, SOLAR_SYSTEM } from "../../../config/config";
 import { AdditiveBlending, BackSide, Group, IcosahedronGeometry, Mesh, PointLight, ShaderMaterial, SphereGeometry, TextureLoader } from "three";
 
-function Sun(props: JSX.IntrinsicElements["group"]) {
+function Sun(props: ThreeElements["group"]) {
     const groupRef = useRef<Group>(null!);
 
     const sunTexture = useLoader(TextureLoader, SCENE_MANAGER.SCENE_ASSETS.textures.solarSystem.sun);

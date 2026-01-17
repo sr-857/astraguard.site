@@ -41,7 +41,7 @@ export interface PlanetOptions {
 }
 
 // base from https://dev.to/cookiemonsterdev/solar-system-with-threejs-3fe0
-export const Planet = forwardRef<Group, PlanetOptions & JSX.IntrinsicElements["group"]>(({
+export const Planet = forwardRef<Group, PlanetOptions & ThreeElements["group"]>(({
   orbitSpeed = 1,
   orbitRadius = 1,
   orbitRotationDirection = "clockwise",
