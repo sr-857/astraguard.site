@@ -1,5 +1,5 @@
 import { createPortal, useThree } from '@react-three/fiber';
-import { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Scene, WebGLRenderTarget } from 'three';
 
 // How does it work:
@@ -9,7 +9,7 @@ import { Scene, WebGLRenderTarget } from 'three';
 // So we render similar materials here, and then, when the real scene renders, the GPU says: 
 // "I've already compiled shaders for this exact material type and configuration - I'll reuse them!"
 export function ScenePrecompiler({ scene, updateProgress }: {
-  scene: JSX.Element; // scene component to be precompiled
+  scene: React.ReactNode; // scene component to be precompiled
   updateProgress: () => void; // function to update loading progress (from AssetManager)
 }) {
   const { gl, camera } = useThree();
