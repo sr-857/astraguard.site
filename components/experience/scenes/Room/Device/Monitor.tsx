@@ -30,7 +30,7 @@ interface MonitorProps {
     roomGLTF: GLTF;
 }
 
-const Monitor: React.FC<MonitorProps> = ({ roomGLTF }): JSX.Element => {
+const Monitor: React.FC<MonitorProps> = ({ roomGLTF }) => {
     const { sceneZoomed, setFullscreenActive } = useSceneStore();
 
     const [deskPosition, setDeskPosition] = useState(new Vector3(0, 0, 0)); // desk position from room model, will be set after the model is loaded

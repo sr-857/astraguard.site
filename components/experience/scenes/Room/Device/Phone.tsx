@@ -46,7 +46,7 @@ interface PhoneProps {
     roomGLTF: GLTF;
 }
 
-const Phone: React.FC<PhoneProps> = ({ roomGLTF }): JSX.Element => {
+const Phone = ({ roomGLTF }: PhoneProps) => {
     const { sceneZoomed } = useSceneStore();
     const { isIOS } = useMobile();
 
