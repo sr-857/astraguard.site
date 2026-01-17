@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion, Reorder } from 'framer-motion';
+import { Reorder } from 'framer-motion';
 import { Play, Plus, Trash2, Clock, MoveVertical, Zap } from 'lucide-react';
 
 interface ChaosEvent {
