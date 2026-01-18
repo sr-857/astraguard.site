@@ -1,0 +1,9 @@
+./.git/objects/pack/pack-ae10e53a656ad0001dfe0c367cb2feabb89f0d04.pack
+./.git/logs/refs/heads/main
+./.git/logs/HEAD
+./.git/COMMIT_EDITMSG
+./public/assets/enter-ai/img9.jpg
+./push_check.txt
+./final_rev.txt
+./jsx_dots.txt
+./log_check.txt

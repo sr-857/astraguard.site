@@ -1,0 +1,10 @@
+f6507d5 fix: replace JSX.IntrinsicElements with ThreeElements for better type compatibility
+4ef514a fix: remove JSX.Element return types causing build failure
+f278751 fix: replace JSX.Element with React.ReactNode in ScenePrecompiler
+51c3ce0 chore: clean up PredictiveAnalysis interface
+961a193 chore: trigger new deployment build
+c374847 chore: disable noUnusedLocals and noUnusedParameters for stable builds
+5bc5c08 fix: remove unused systemId from PredictiveAnalysis props
+0a8a0f4 fix: remove unused Gauge import from NeuralHealthMonitor
+f60f1f8 fix: remove unused motion import from ScenarioDesigner
+3c211ab Initial commit

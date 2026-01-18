@@ -1,0 +1,10 @@
+./.git/logs/refs/heads/main:51c3ce0f75db21dc1c77d79c3017df697b8f1232 f2787516ad25f6247578ff2f03b438c3e4794fc8 sr-857 <sr-857@users.noreply.github.com> 1768681719 +0530	commit: fix: replace JSX.Element with React.ReactNode in ScenePrecompiler
+./.git/logs/refs/heads/main:f2787516ad25f6247578ff2f03b438c3e4794fc8 4ef514af81ac71b5781a0f1bf556dd94267bf108 sr-857 <sr-857@users.noreply.github.com> 1768681778 +0530	commit: fix: remove JSX.Element return types causing build failure
+./.git/logs/refs/heads/main:4ef514af81ac71b5781a0f1bf556dd94267bf108 f6507d5753723036b2b8eff88daaf127a67311b7 sr-857 <sr-857@users.noreply.github.com> 1768682283 +0530	commit: fix: replace JSX.IntrinsicElements with ThreeElements for better type compatibility
+./.git/logs/HEAD:51c3ce0f75db21dc1c77d79c3017df697b8f1232 f2787516ad25f6247578ff2f03b438c3e4794fc8 sr-857 <sr-857@users.noreply.github.com> 1768681719 +0530	commit: fix: replace JSX.Element with React.ReactNode in ScenePrecompiler
+./.git/logs/HEAD:f2787516ad25f6247578ff2f03b438c3e4794fc8 4ef514af81ac71b5781a0f1bf556dd94267bf108 sr-857 <sr-857@users.noreply.github.com> 1768681778 +0530	commit: fix: remove JSX.Element return types causing build failure
+./.git/logs/HEAD:4ef514af81ac71b5781a0f1bf556dd94267bf108 f6507d5753723036b2b8eff88daaf127a67311b7 sr-857 <sr-857@users.noreply.github.com> 1768682283 +0530	commit: fix: replace JSX.IntrinsicElements with ThreeElements for better type compatibility
+./.git/COMMIT_EDITMSG:fix: replace JSX.IntrinsicElements with ThreeElements for better type compatibility
+./push_check.txt:4ef514a fix: remove JSX.Element return types causing build failure
+./push_check.txt:f278751 fix: replace JSX.Element with React.ReactNode in ScenePrecompiler
+./final_rev.txt:f6507d5 fix: replace JSX.IntrinsicElements with ThreeElements for better type compatibility

@@ -23,6 +23,11 @@
     "allowImportingTsExtensions": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
+    "types": [
+      "node",
+      "react",
+      "react-dom"
+    ],
     "paths": {
       "@/*": [
         "./*"
