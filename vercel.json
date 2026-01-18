@@ -1,0 +1,7 @@
+{
+    "framework": "nextjs",
+    "regions": [
+        "cdg1"
+    ],
+    "cleanUrls": true
+}

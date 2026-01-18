@@ -73,11 +73,11 @@ const Phone = ({ roomGLTF }: PhoneProps) => {
 
     // hide hints when zoomed in after timeout
     useEffect(() => {
-        if (sceneZoomed === 'in') {
-            let scrollTimer: number | undefined;
-            let fullscreenTimer: number | undefined;
-            let iosTimer: number | undefined;
+        let scrollTimer: any;
+        let fullscreenTimer: any;
+        let iosTimer: any;
 
+        if (sceneZoomed === 'in') {
             // scroll hint
             scrollTimer = setTimeout(() => {
                 setShowScrollHint(false);
@@ -94,18 +94,18 @@ const Phone = ({ roomGLTF }: PhoneProps) => {
                     setShowIOSHint(false);
                 }, IOS_HINT_TIMEOUT);
             }
-
-            return () => {
-                if (scrollTimer) clearTimeout(scrollTimer);
-                if (fullscreenTimer) clearTimeout(fullscreenTimer);
-                if (iosTimer) clearTimeout(iosTimer);
-            };
         } else {
             // reset hints when zoomed out
             setShowScrollHint(true);
             setShowFullscreenHint(true);
             setShowIOSHint(true);
         }
+
+        return () => {
+            if (scrollTimer) clearTimeout(scrollTimer);
+            if (fullscreenTimer) clearTimeout(fullscreenTimer);
+            if (iosTimer) clearTimeout(iosTimer);
+        };
     }, [sceneZoomed]);
 
     // set fullscreen mode for IOS

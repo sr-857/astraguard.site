@@ -23,7 +23,11 @@ export const SCENE_MANAGER = {
             galaxy: {
                 galaxy: '/assets/models/galaxy.glb'
             },
-            // Room removed
+            room: {
+                room: '/assets/models/room.glb',
+                monitor: '/assets/models/monitor.glb',
+                phone: '/assets/models/phone.glb',
+            },
         },
         textures: {
             // scenes

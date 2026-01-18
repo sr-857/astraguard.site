@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, forwardRef } from "react";
-import { useFrame, useLoader } from "@react-three/fiber";
+import { ThreeElements, useFrame, useLoader } from "@react-three/fiber";
 import {
   Group,
   Color,

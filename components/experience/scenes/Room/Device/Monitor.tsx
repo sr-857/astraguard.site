@@ -68,10 +68,10 @@ const Monitor: React.FC<MonitorProps> = ({ roomGLTF }) => {
 
     // hide hints when zoomed in after timeout
     useEffect(() => {
-        if (sceneZoomed === 'in') {
-            let scrollTimer: number | undefined;
-            let fullscreenTimer: number | undefined;
+        let scrollTimer: any;
+        let fullscreenTimer: any;
 
+        if (sceneZoomed === 'in') {
             // scroll hint
             scrollTimer = setTimeout(() => {
                 setShowScrollHint(false);
@@ -81,16 +81,16 @@ const Monitor: React.FC<MonitorProps> = ({ roomGLTF }) => {
             fullscreenTimer = setTimeout(() => {
                 setShowFullscreenHint(false);
             }, FULLSCREEN_HINT_TIMEOUT);
-
-            return () => {
-                if (scrollTimer) clearTimeout(scrollTimer);
-                if (fullscreenTimer) clearTimeout(fullscreenTimer);
-            };
         } else {
             // reset hints when zoomed out
             setShowScrollHint(true);
             setShowFullscreenHint(true);
         }
+
+        return () => {
+            if (scrollTimer) clearTimeout(scrollTimer);
+            if (fullscreenTimer) clearTimeout(fullscreenTimer);
+        };
     }, [sceneZoomed]);
 
     // handle escape key to exit fullscreen mode
